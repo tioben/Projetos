@@ -1,0 +1,14 @@
+Botão NOVA CONTA
+    1. Tela do .card muda para com as labels/inputbox Email, Senha, Confirmar senha e CRIAR CONTA;
+    2. Quando preenchido e clicado em CRIAR CONTA, os dados são tranferidos para o banco de dados;
+
+Botão LOGIN
+    1. O usuário preenche os dados e em seguida é feita uma validação:
+        OK-> O usuário é transferido para a página do portifólio;
+        NOK-> O usuário recebe uma mensagem de erro e continua na página de login para tentar novamente.
+
+Botão REDEFINIR CONTA
+    1. Tela do .card muda para uma label/input Email. Onde o usuário irá digitar o email cadastro, ao qual receberá uma mensagem em sua caixa de emails com um link que direciona o usuário para uma tela onde ele pode redefinir sua senha.
+
+Observação
+    1. Recrutadores também têm a opção de logar com a conta de recrutador (login:recrutador/senha:recrutador)

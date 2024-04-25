@@ -1,0 +1,174 @@
+/*Configurações gerais*/
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(200, 200, 200);
+    font-size: .9rem;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    background-color: #333;
+}
+
+.title-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;;
+    background-color: #222;
+    width: 100%;
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.541);
+
+}
+
+.title{
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.input{
+    margin-top: 5px;
+}
+
+
+.button {
+    background-color: #333;
+    border: 1px solid #222;
+    color: #c8c8c8;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.541);
+
+}
+  
+.button:hover {
+    background-color: #222;
+    color: #c8c8c8;
+}
+
+.config-section .button:hover {
+    background-color: #444;
+}
+
+.input{
+    background-color: #333;
+    border: 1px solid #222;
+    width: 250px;
+    text-align: center;
+    color: #c8c8c8;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.541);
+
+}
+
+.input:hover {
+    background-color: #444;
+    color: #c8c8c8;
+}
+
+/*nav*/
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    gap: 30px;
+
+}
+
+/*main*/
+#section {
+    margin: 15px;
+    max-width: 750px;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    gap: 30px;
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.541);
+}
+
+#section .player-container {
+    width: 250px;
+    height: 250px;
+    background-color: #333;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.541);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+#section .player-container ul{
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.image-container{
+    width: 100px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+/*seção adicionar player*/
+#add-player{
+    display: none;
+    width: 100%;
+    background-color: #222;
+}
+
+#add-player form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*seção remover player*/
+#del-player{
+    display: none;
+    width: 100%;
+    background-color: #222;
+    
+}
+
+#del-player form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

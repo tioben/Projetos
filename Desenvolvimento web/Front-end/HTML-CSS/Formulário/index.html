@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Formulários de cadastro">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de cadastro inicial</title>
+</head>
+<body>
+    <form id="first-form" method="GET" action="http://arquivo.devmedia.com.br/projeto/requisicao.php">
+        <main>
+            <h1 id="title">Cadastro inicial</h1>
+            
+            <!-- Fieldset Conta -->
+            <fieldset id="fd-conta" class="fd"><legend>Conta</legend>
+                <div id="email-content" class="fd-conta-contents">
+                    <label>Email:</label>
+                    <input name="email" type="email" minlength="8" multiple required/>
+                </div>
+                <div id="senha-content" class="fd-conta-contents">
+                    <label>Senha:</label>
+                    <input name="senha" type="password" required/>
+                </div>
+            </fieldset>
+            
+            <!-- Fieldset Dados Pessoais -->
+            <fieldset id="fd-dados-pessoais" class="fd"><legend>Dados Pessoais</legend>
+                <div id="nome-content" class="fd-dados-pessoais-contents">
+                    <label>Nome Completo:</label>
+                    <input name="nome" type="text" placeholder="Ex.: Gustavo Henrique Ferreira Martins" required/>
+                </div>
+                <div id="telefone-content" class="fd-dados-pessoais-contents">
+                    <label>Telefone:</label>
+                    <input name="tel" type="tel" placeholder="Ex.: (99) 99999-9999" pattern="\([0-9]{2}) [0-9]{5}-[0-9]{4}" maxlength="15" required/>
+                </div>
+                <div  id="sexo-content" class="fd-dados-pessoais-contents">
+                    <label id="label-sexo">Sexo:</label>
+                    <div id="masculino" class="checkbox-content">
+                        <label>Masculino</label>
+                        <input type="radio" value="Masculino" name="sexo" checked/>
+                    </div>
+                    <div id="feminino" class="checkbox-content">
+                        <label>Feminino</label>
+                        <input type="radio" value="Feminino" name="sexo"/>
+                    </div>
+                </div>
+                <div id="nascimento-content" class="fd-dados-pessoais-contents">
+                    <label>Data de nascimento:</label>
+                    <input name="nascimento" type="date" required/>
+                </div>
+                <div id="foto-content" class="fd-dados-pessoais-contents">
+                    <label>Foto de perfil:</label>
+                    <input name="foto" type="file" accept="image/*"/>
+                </div>
+            </fieldset>
+            
+            <!-- Fieldset Endereço -->
+            <fieldset id="fd-endereço" class="fd"><legend>Endereço</legend>
+                <div id="rua-content" class="fd-endereço-contents">
+                    <label>Rua:</label>
+                    <input name="rua" type="text" placeholder="Ex.: Rua/ Travessa/ Avenida" required/>
+                </div>
+                <div id="n-content" class="fd-endereço-contents">
+                    <label>Nº:</label>
+                    <input name="n" type="number" min="1" max="9999" placeholder="Ex.: 57" required/>
+                </div>
+                <div id="complemento-content" class="fd-endereço-contents">
+                    <label>Complemento</label>
+                    <input name="complemento" type="text"/>
+                </div>
+                <div id="cidade-content" class="fd-endereço-contents">
+                    <label>Cidade:</label>
+                    <input name="cidade" type="text" placeholder="Ex.: São Paulo" required/>
+                </div>
+                <div id="estado-content" class="fd-endereço-contents">
+                    <label>Estado:</label>
+                    <select name="uf">
+                        <option value="RJ">RJ</option>
+                        <option value="SP">SP</option>
+                    </select>
+                </div>
+            </fieldset>
+            
+            <!-- Fieldset créditos -->
+            <fieldset id="fd-creditos" class="fd"><legend>Contato</legend>
+                <div id="creditos-content" class="fd-creditos-contents">
+                    <label>Mensagem:</label>
+                    <textarea name="anuncio" maxlength="245" placeholder="Escreva aqui o que você achou do formulário" rows="10" cols="15"></textarea>
+                </div>
+                <div id="checkbox-content" class="fd-anuncio-contents">
+                    <input type="checkbox" checked name="checkbox"/>
+                    <label>Deseja receber notícias por email?</label>
+                </div>
+            </fieldset>
+            
+            <div id="finalizar-content">
+                <input id="finalizar-button" type="submit" value="Finalizar cadastro" />
+            </div>
+        </main>
+    </form>
+</body>
+</html>

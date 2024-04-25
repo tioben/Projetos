@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista dos meus personagens no Tibia</title>
+</head>
+<body>
+    <div class="title-container">
+        <h1 class="title">Bem vindo a lista dos meus personagens do TIBIA</h1>
+    </div>
+    <!--show buttons-->
+    <div class="buttons">
+        <button class="button" id="add-button">Adicionar jogador</button>
+        <button class="button" id="del-button">Remover jogador</button>
+        <button class="button" id="close-button" style="display:none;">X</button>
+    </div>
+    <!--Add player-->
+    <section id="add-player" class="config-section">
+        <form action="" id="add-player-form">
+            <br>
+            <label for="add-nickname">Nickname</label>
+            <input class="input" type="text" id="add-nickname" name="nickname" maxlength="20" pattern="[A-Za-z0-9 ]+" required>
+            <br>
+            <label for="add-vocation">Vocation</label>
+            <select class="input" id="add-vocation" name="vocation" >
+                <option value="Retro-OpenPVP">Sorcerer</option>
+                <option value="OpenPVP">Paladin</option>
+                <option value="OptionalPVP">Knight</option>
+                <option value="Retro-HardcorePVP">Druid</option>
+            </select>
+            <br>
+            <label for="add-level">Level</label>
+            <input class="input" type="number" id="add-level" name="level" min="8" required>
+            <br>
+            <label for="add-world">World</label>
+            <select class="input" id="add-world" name="world" >
+                <option value="Retro-OpenPVP">Retro-OpenPVP</option>
+                <option value="OpenPVP">OpenPVP</option>
+                <option value="OptionalPVP">OptionalPVP</option>
+                <option value="Retro-HardcorePVP">Retro-HardcorePVP</option>
+            </select>
+            <br>
+            <label for="add-img">Imagem</label>
+            <input class="input" type="file" id="upload-image" name="image" accept="image/*">
+            <br>
+            <input class="button" type="submit" value="Adicionar">
+            <br>
+        </form>
+    </section>
+    <!--Del player-->
+    <section id="del-player" class="config-section">
+        <form action="" id="del-player-form">
+            <br>
+            <label for="del-nickname">Nickname</label>
+            <input class="input" type="text" id="del-nickname" name="nickname" maxlength="20" pattern="[A-Za-z0-9 ]+" required>
+            <br>
+            <input class="button" type="submit" value="Remover">
+            <br>
+        </form>
+    </section>
+    <!--Main-->
+    <section id="section"></section>
+    <!--footer-->
+    <div class="footer" style="margin: 15px;">
+        <a href="https://www.tibiawiki.com.br/wiki/Outfitter" class="button" style="text-decoration: none;" target="_blank">Crie seu personagem</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
